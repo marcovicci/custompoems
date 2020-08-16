@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Emoji Poetry{% endblock %}
+
+{% block content %}
+
+
+
+
+
+      {% for emoji in emojiOne %}
+    <p>"{{ emoji[1] }} my love is like a {{ emoji[2] }}"<br>
+      You approach, and I catch a glimpse of {{ emoji[3] }}.<br>
+      I can almost hear {{ emoji[4] }}.<br>
+      I wrap my arms around you in a {{ emoji[7] }} embrace<br>
+      and breathe in the scent of {{ emoji[5] }}.<br>
+      Your kiss is {{ emoji[6] }}.<br>
+      You are always {{ emoji[8] }}, and I love you for it.</p>
+      {% endfor %}
+{% endblock %}

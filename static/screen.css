@@ -1,0 +1,9 @@
+/* Google Font import */
+@import url('https://fonts.googleapis.com/css2?family=Monda&family=Yellowtail&display=swap');
+
+body {
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Monda', sans-serif;
+  margin: 0;
+}
