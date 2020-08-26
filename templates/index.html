@@ -1,20 +1,56 @@
 {% extends "base.html" %}
 
-{% block title %}Emoji Poetry{% endblock %}
+{% block title %}Generate Some Poetry{% endblock %}
 
 {% block content %}
 
 
+<form action="/poem" method="post">
+  <label for="genders">Pick your beloved's gender:</label>
+  <select name="genders" id="genders">
 
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="no">No Thank You</option>
 
+  </select>
+  <br><br>
 
-      {% for emoji in emojiOne %}
-    <p>"{{ emoji[1] }} my love is like a {{ emoji[2] }}"<br>
-      You approach, and I catch a glimpse of {{ emoji[3] }}.<br>
-      I can almost hear {{ emoji[4] }}.<br>
-      I wrap my arms around you in a {{ emoji[7] }} embrace<br>
-      and breathe in the scent of {{ emoji[5] }}.<br>
-      Your kiss is {{ emoji[6] }}.<br>
-      You are always {{ emoji[8] }}, and I love you for it.</p>
-      {% endfor %}
+  <label for="hairs">Pick your beloved's hair colour:</label>
+  <select name="hairs" id="hairs">
+
+      <option value="black">Black</option>
+      <option value="brown">Brown</option>
+      <option value="yellow">Blonde/Yellow</option>
+      <option value="red">Red</option>
+      <option value="orange">Orange</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="purple">Purple</option>
+      <option value="pink">Pink</option>
+      <option value="white">White</option>
+
+  </select>
+  <br><br>
+
+  <label for="eyes">Pick your beloved's eye colour:</label>
+  <select name="eyes" id="eyes">
+
+      <option value="black">Black</option>
+      <option value="brown">Brown</option>
+      <option value="yellow">Blonde/Yellow</option>
+      <option value="red">Red</option>
+      <option value="orange">Orange</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="purple">Purple</option>
+      <option value="pink">Pink</option>
+      <option value="white">White</option>
+
+  </select>
+  <br><br>
+
+  <input type="submit" value="GENERATE POEM">
+</form>
+
 {% endblock %}
